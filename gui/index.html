@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tai Chi </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.6.1/d3.js" integrity="sha512-pJbXh9nxFa1tkmI3Gxiay8+mKTW+QvM8aMrTSR4xcw671sTWkvlHBgnyqXCRr1HFkE0YwhoRZwcdUFFxP4D9Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./public/static/css/styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="row">
+      <div class="column left">
+        <div style="float:left; margin: 10px;">
+          <form id="myForm">
+            <input type="file" id="csvFile" accept=".csv" />
+          </form>
+        </div>
+        <div class="float-left">
+          <form id="myForm2" >
+            <input type="file" id="jsonFile" accept=".json" />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="clear">&nbsp;</div>
+        <div class="slidecontainer">
+          <input type="range" min="0" value="0" class="slider" id="slider-id">
+        </div>
+        <div id="viz-container"></div>
+      </div>
+      <div class="column right">
+        <div id="feedback-container">
+          <div>
+          <h1> Raising The Power ML Model Explanations </h1>
+          <div id="textbox" style="font-family: Arial, Helvetica, sans-serif; font-size: small;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./public/static/js/lookups.js"></script>
+  <script src="./public/static/js/visualize.js"></script>
+</html>
