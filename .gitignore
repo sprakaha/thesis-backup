@@ -1,0 +1,6 @@
+extra/
+data generation/
+plots/
+*.pyc
+.vs/
+path_vars.py
